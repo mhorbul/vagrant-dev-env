@@ -7,8 +7,9 @@ This environment is built using veewee gem
 - gem install bundler
 - bundle install
 ** build the basebox and convert it to the Vagrant one
-- vagrant basebox build centos-5.5-i386
-- vagrant basebox export centos-5.5-i386
+- bundle exec vagrant basebox build centos-5.5-i386
+- bundle exec vagrant basebox export centos-5.5-i386
 ** add new created box and run it
 - vagrant add centos-5.5-i386 centos-5.5-i386.box
 - vagrant up
+

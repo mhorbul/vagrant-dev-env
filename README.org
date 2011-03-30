@@ -1,0 +1,14 @@
+* vagrant dev environment
+This environment is built using veewee gem
+(https://github.com/jedi4ever/veewee.git) and vagrant
+(http://vagrantup.com/)
+* How fire up the environment
+** install bundler & dependencies
+gem install bundler
+bundle install
+** build the basebox and convert it to the Vagrant one
+vagrant basebox build centos-5.5-i386
+vagrant basebox export centos-5.5-i386
+** add new created box and run it
+vagrant add centos-5.5-i386 centos-5.5-i386.box
+vagrant up

@@ -14,6 +14,7 @@ yum -y clean all
 cd /tmp
 wget --no-check-certificate https://github.com/wayneeseguin/rvm/raw/1.3.0/contrib/install-system-wide
 sh install-system-wide --version '1.3.0'
+rm -f install-system-wide
 
 cat > /etc/profile.d/rvm.sh <<\EOF
 [[ -s '/usr/local/lib/rvm' ]] && source '/usr/local/lib/rvm'
